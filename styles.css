@@ -1,0 +1,148 @@
+*{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    caret-color: transparent;
+    /*outline: 2px solid;*/
+}
+body {
+    margin-top: 8%;
+    background-image: url(bgimg.jpg);
+    background-size: cover;
+}
+table {
+    /*border-collapse: collapse;*/
+    border-radius: 16.5px;
+}
+#staticTable {
+    width: 70px;
+    border-spacing: 0 3px;
+}
+#theTable {
+    border-spacing: 3px;
+}
+.table_div {
+    display: flex;
+    justify-content: center;
+}
+#staticTable tr td{
+    text-align: center;
+} 
+td {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.549);
+    color: rgba(255, 255, 255, 0.881);
+    width: 70px;
+    height: 45px; 
+}
+#theTable th:nth-child(1) {
+    text-align: left;
+    padding-left: 10px;
+}
+#theTable td:nth-child(1) {
+    text-align: left;
+    padding-left: 10px;
+    width: 200px;
+}
+#staticTable tr th {
+    border-top-left-radius: 15px;
+}
+#theTable th:last-child {
+    border-top-right-radius: 15px;
+}
+#btleft {
+    border-bottom-left-radius: 15px;
+}
+.btright {
+    border-bottom-right-radius: 15px;
+}
+th {
+    background-color: turquoise;
+    height: 45px;
+}
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+.aScore {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 300px;
+    align-items: center;
+}
+.bScore {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 300px;
+    align-items: center;
+}
+.score {
+    border: 2px solid black;
+    background-color: rgba(0, 255, 229, 0.773);
+    border-radius: 12px;
+    padding-left: 29px;
+    width: 10%;
+    height: 60px;  
+}
+select {
+    color: black;
+    background-color: rgba(0, 255, 229, 0.773);
+    border-radius: 9px;
+    padding-right: 50px;
+    caret-color: transparent;
+    padding-left: 10px;
+    border: none;
+}
+select:hover {
+    background-color: rgba(0, 0, 0, 0.575);
+    color: turquoise;
+    transition: 0.4s;
+}
+select:active {
+    background-color: rgba(0, 0, 0, 0.575);
+    color: turquoise;
+    transition: 10s;
+}
+#teamA {
+    width: 300px;
+}
+#teamB {
+    width: 300px;
+}
+option {
+    background-color: rgba(0, 0, 0, 0.612);
+}
+h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+.submitdiv {
+    padding-top: 50px;
+    text-align: center;
+}
+#submit {
+    background-color: rgba(0, 0, 0, 0.505);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    caret-color: transparent;
+}
+#submit:hover {
+    background-color: rgba(0, 255, 229, 0.651);
+    color: black;
+    transition: 0.4s;
+}
+#submit:active {
+    background-color: rgba(0, 156, 146, 0.601);
+    color: white;
+    transition: none;
+}
+.turq {
+    color: rgb(0, 255, 255);
+}

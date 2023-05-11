@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <div class="table_div">
+        <table id="staticTable">
+            <tr>
+                <th>No.</th>
+            </tr>
+            <tr>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td id="btleft">5</td>
+            </tr>    
+        </table>
+        <table id="theTable">
+            <tr id="table_head">
+                <th>TEAM</th>
+                <th>M</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>GF</th>
+                <th>GA</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr id="Old Skool FC">
+                <td>Old Skool FC</td>
+                <td id="M">0</td>
+                <td id="W">0</td>
+                <td id="D">0</td>
+                <td id="L">0</td>
+                <td id="GF">0</td>
+                <td id="GA">0</td>
+                <td id="GD">0</td>
+                <td id="Pts">0</td>
+            </tr>
+            <tr id="Pakyo FC">
+                <td>Pakyo FC</td>
+                <td id="M">0</td>
+                <td id="W">0</td>
+                <td id="D">0</td>
+                <td id="L">0</td>
+                <td id="GF">0</td>
+                <td id="GA">0</td>
+                <td id="GD">0</td>
+                <td id="Pts">0</td>
+            </tr>
+            <tr id="Ronaq FC">
+                <td>Ronaq FC</td>
+                <td id="M">0</td>
+                <td id="W">0</td>
+                <td id="D">0</td>
+                <td id="L">0</td>
+                <td id="GF">0</td>
+                <td id="GA">0</td>
+                <td id="GD">0</td>
+                <td id="Pts">0</td>
+            </tr>
+            <tr id="Rosario FC">
+                <td>Rosario FC</td>
+                <td id="M">0</td>
+                <td id="W">0</td>
+                <td id="D">0</td>
+                <td id="L">0</td>
+                <td id="GF">0</td>
+                <td id="GA">0</td>
+                <td id="GD">0</td>
+                <td id="Pts">0</td>
+            </tr>
+            <tr id="Sigma FC">
+                <td>Sigma FC</td>
+                <td id="M">0</td>
+                <td id="W">0</td>
+                <td id="D">0</td>
+                <td id="L">0</td>
+                <td id="GF">0</td>
+                <td id="GA">0</td>
+                <td id="GD">0</td>
+                <td class="btright" id="Pts">0</td>
+            </tr>
+        </table>
+    </div>
+    <!--<h6>FINISHED</h6>-->
+    <div class="scoreboard">
+        <div class="aScore">
+            <select name="teamA" id="teamA" required>
+                <option value="" disabled selected hidden>Select a team</option>
+                <option value="Old Skool FC">Old Skool FC</option>
+                <option value="Pakyo FC">Pakyo FC</option>
+                <option value="Ronaq FC">Ronaq FC</option>
+                <option value="Rosario FC">Rosario FC</option>
+                <option value="Sigma FC">Sigma FC</option>
+            </select>
+            <input type="number" id="aScore" class="score" min="0" value="0" required>
+        </div>
+        <h2 class="turq">:</h2>
+        <div class="bScore">
+            <input type="number" class="score" id="bScore" min="0" value="0" required>
+            <select name="teamB" id="teamB">
+                <option value="" disabled selected hidden>Select a team</option>
+                <option value="Old Skool FC">Old Skool FC</option>
+                <option value="Pakyo FC">Pakyo FC</option>
+                <option value="Ronaq FC">Ronaq FC</option>
+                <option value="Rosario FC">Rosario FC</option>
+                <option value="Sigma FC">Sigma FC</option>
+            </select>
+        </div>
+    </div>
+    <div class="submitdiv">
+        <button type="button" onclick="main()" id="submit">Submit</button> 
+    </div>
+</body>
+</html>
